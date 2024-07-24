@@ -1,7 +1,9 @@
 # irregular-loops
 This repository contains a project for the university exam Hight Performance Computing. In this project i evaluated many techniques of schedulling for irregular loops using OpenMP
 
-# Rules to compile
+## Instructions
+
+Follow these steps to build and run the project:
 
 ## Prerequisites
 
@@ -15,16 +17,24 @@ Ensure you have the following installed on your system:
 
 Follow these steps to build and run the project:
 
-### 1. Create the Project Structure
+### Download files
+Looking that the size of files is too large, I upload its on Google Drive
+https://drive.google.com/drive/folders/1GxEibGkDFJyyCQnaaSbjQInzqOKBVQO6?usp=drive_link
 
-Organize your project as shown in the structure above. Below is an example of the source files:
+###
+Set files into the folder build
 
-`src/main.c`:
-```c
-#include <stdio.h>
-#include "myproject/myheader.h"
+### 1. Move into the folder 
+Move into the folder "build" and run this command:
+```sh
+cmake ..
+make
+./bench.sh
+```
 
-int main() {
-    printf("Hello, CMake!\n");
-    return 0;
-}
+### Make plots
+When the run is over run the grafici/finalPlotter.py 
+```sh
+Python finalPlotter.py
+```
+
