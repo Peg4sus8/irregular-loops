@@ -17,23 +17,26 @@ Ensure you have the following installed on your system:
 
 Follow these steps to build and run the project:
 
-### Download files
+### 1. Download files
 Looking that the size of files is too large, I upload its on Google Drive
 https://drive.google.com/drive/folders/1GxEibGkDFJyyCQnaaSbjQInzqOKBVQO6?usp=drive_link
 
-###
 Set files into the folder build
 
-### 1. Move into the folder 
+### 2. Move into the work folder 
 Move into the folder "build" and run this command:
 ```sh
 cmake ..
 make
+```
+
+### 3. Run tests
+```sh
 ./bench.sh
 ```
 
-### Make plots
-When the run is over run the grafici/finalPlotter.py 
+### 4. Make plots
+When the run is over make plots with someone of plotter files, I used grafici/finalPlotter.py 
 ```sh
 Python finalPlotter.py
 ```
